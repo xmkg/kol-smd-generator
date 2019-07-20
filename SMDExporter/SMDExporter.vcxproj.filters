@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Misc">
+      <UniqueIdentifier>{3b189a13-fc4c-4c0b-8096-c47a536e9b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\N3Shape">
+      <UniqueIdentifier>{2019b0b2-70ca-459b-9511-b92834f7fc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object Post Data">
+      <UniqueIdentifier>{58081622-c51c-4675-94ad-5c8c3f198beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server Map Data">
+      <UniqueIdentifier>{21c3250b-c328-404d-b3ca-f9f9c467d55a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Terrain Data">
+      <UniqueIdentifier>{f180d5de-ae76-4a89-a84f-9a20b3f5a28a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCSTLMap.h">
+      <Filter>Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugUtils.h">
+      <Filter>Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferenceObject.h">
+      <Filter>Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="tstring.h">
+      <Filter>Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="My_3DStruct.h">
+      <Filter>Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="N3ShapeMgr.h">
+      <Filter>Source Files\N3Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Source Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="N3ShapeEx.h">
+      <Filter>Source Files\N3Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPostData.h">
+      <Filter>Source Files\Object Post Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SMDFile.h">
+      <Filter>Source Files\Server Map Data</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTerrain.h">
+      <Filter>Source Files\Game Terrain Data</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameserverMap.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SMDExporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugUtils.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ReferenceObject.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="tstring.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="N3ShapeMgr.cpp">
+      <Filter>Source Files\N3Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="GameserverMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N3ShapeEx.cpp">
+      <Filter>Source Files\N3Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPostData.cpp">
+      <Filter>Source Files\Object Post Data</Filter>
+    </ClCompile>
+    <ClCompile Include="SMDFile.cpp">
+      <Filter>Source Files\Server Map Data</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTerrain.cpp">
+      <Filter>Source Files\Game Terrain Data</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
