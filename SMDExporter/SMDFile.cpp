@@ -1,3 +1,13 @@
+/**
+ * ______________________________________________________
+ * This file is part of ko-smd-generator project.
+ * 
+ * @author       Mustafa Kemal GÄ±lor <mustafagilor@gmail.com> (2016)
+ * .
+ * SPDX-License-Identifier:	MIT
+ * ______________________________________________________
+ */
+
 #include "stdafx.h"
 #include "N3ShapeMgr.h"
 #include "tstring.h"
@@ -230,7 +240,7 @@ float SMDFile::GetHeight(float x, float y, float z)
 	int iX, iZ;
 	iX = (int)(x/m_fUnitDist);
 	iZ = (int)(z/m_fUnitDist);
-	//_ASSERT( iX, iZ°¡ ¹üÀ§³»¿¡ ÀÖ´Â °ªÀÎÁö Ã¼Å©ÇÏ±â);
+	//_ASSERT( iX, iZï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼Å©ï¿½Ï±ï¿½);
 
 	float fYTerrain;
 	float h1, h2, h3;
@@ -252,9 +262,9 @@ float SMDFile::GetHeight(float x, float y, float z)
 
 			//if (dX == 1.0f) return h2;
 
-			float h12 = h1+(h2-h1)*dX;	// h1°ú h2»çÀÌÀÇ ³ôÀÌ°ª
-			float h32 = h3+(h2-h3)*dX;	// h3°ú h2»çÀÌÀÇ ³ôÀÌ°ª
-			fYTerrain = h32 + (h12-h32)*((dZ)/(1.0f-dX));	// Ã£°íÀÚ ÇÏ´Â ³ôÀÌ°ª
+			float h12 = h1+(h2-h1)*dX;	// h1ï¿½ï¿½ h2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
+			float h32 = h3+(h2-h3)*dX;	// h3ï¿½ï¿½ h2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
+			fYTerrain = h32 + (h12-h32)*((dZ)/(1.0f-dX));	// Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
 		}
 		else
 		{
@@ -264,9 +274,9 @@ float SMDFile::GetHeight(float x, float y, float z)
 
 			if (dX == 0.0f) return h1;
 
-			float h12 = h1+(h2-h1)*dX;	// h1°ú h2»çÀÌÀÇ ³ôÀÌ°ª
-			float h13 = h1+(h3-h1)*dX;	// h1°ú h3»çÀÌÀÇ ³ôÀÌ°ª
-			fYTerrain = h13 + (h12-h13)*((1.0f-dZ)/(dX));	// Ã£°íÀÚ ÇÏ´Â ³ôÀÌ°ª
+			float h12 = h1+(h2-h1)*dX;	// h1ï¿½ï¿½ h2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
+			float h13 = h1+(h3-h1)*dX;	// h1ï¿½ï¿½ h3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
+			fYTerrain = h13 + (h12-h13)*((1.0f-dZ)/(dX));	// Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
 		}
 	}
 	else
@@ -279,9 +289,9 @@ float SMDFile::GetHeight(float x, float y, float z)
 
 			//if (dX == 1.0f) return h2;
 
-			float h12 = h1+(h2-h1)*dX;	// h1°ú h2»çÀÌÀÇ ³ôÀÌ°ª
-			float h32 = h3+(h2-h3)*dX;	// h3°ú h2»çÀÌÀÇ ³ôÀÌ°ª
-			fYTerrain = h12 + (h32-h12)*((1.0f-dZ)/(1.0f-dX));	// Ã£°íÀÚ ÇÏ´Â ³ôÀÌ°ª
+			float h12 = h1+(h2-h1)*dX;	// h1ï¿½ï¿½ h2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
+			float h32 = h3+(h2-h3)*dX;	// h3ï¿½ï¿½ h2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
+			fYTerrain = h12 + (h32-h12)*((1.0f-dZ)/(1.0f-dX));	// Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
 		}
 		else
 		{
@@ -291,14 +301,14 @@ float SMDFile::GetHeight(float x, float y, float z)
 
 			if (dX == 0.0f) return h1;
 
-			float h12 = h1+(h2-h1)*dX;	// h1°ú h2»çÀÌÀÇ ³ôÀÌ°ª
-			float h13 = h1+(h3-h1)*dX;	// h1°ú h3»çÀÌÀÇ ³ôÀÌ°ª
-			fYTerrain = h12 + (h13-h12)*((dZ)/(dX));	// Ã£°íÀÚ ÇÏ´Â ³ôÀÌ°ª
+			float h12 = h1+(h2-h1)*dX;	// h1ï¿½ï¿½ h2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
+			float h13 = h1+(h3-h1)*dX;	// h1ï¿½ï¿½ h3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
+			fYTerrain = h12 + (h13-h12)*((dZ)/(dX));	// Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½
 		}
 	}
 
 	__Vector3 vPos(x, y, z);
-	float fHeight = m_N3ShapeMgr->GetHeightNearstPos(vPos); // °¡Àå °¡±î¿î ³ôÀÌ°ªÀ» µ¹·ÁÁØ´Ù..
+	float fHeight = m_N3ShapeMgr->GetHeightNearstPos(vPos); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½..
 	if(-FLT_MAX != fHeight && fHeight > fYTerrain) return fHeight;
 	else return fYTerrain;
 }

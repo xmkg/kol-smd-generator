@@ -1,4 +1,15 @@
-﻿#include "stdafx.h"
+﻿/**
+ * ______________________________________________________
+ * This file is part of ko-smd-generator project.
+ * 
+ * @author       Mustafa Kemal Gılor <mustafagilor@gmail.com> (2016)
+ * .
+ * SPDX-License-Identifier:	MIT
+ * ______________________________________________________
+ */
+
+
+#include "stdafx.h"
 #include "N3ShapeMgr.h"
 #include "N3ShapeEx.h"
 
